@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>About Us - Taskmate</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container-img d-flex justify-content-center align-items-center" style="margin: 0; padding: 0; height: 100vh; width: 100%; background-image: url('{% static "images/bg-about.jpg" %}');">
+ <!-- background-image: url('static/images/bg-about.jpg'); -->
+    <div class="row">
+        <div class="col-md-7">
+            <img src="{% static 'images/about.png' %}" alt="me" class="img-fluid" style="max-width: 395px;height: 350px;">
+        </div>
+        <div class="col-md-5 text-white">
+            <h1 style="color: rgb(247, 238, 238); font-family:Georgia, 'Times New Roman', Times, serif; text-shadow: 2px 2px 4px rgb(101, 99, 99);">SHAMBHAVI</h1>
+        </br>
+            <p><strong style="color: rgb(247, 238, 238); font-family:Georgia, 'Times New Roman', Times, serif; text-shadow: 2px 2px 4px rgb(101, 99, 99);">Age:&nbsp;&nbsp;</strong>23</p>
+            <p><strong style="color: rgb(247, 238, 238); font-family:Georgia, 'Times New Roman', Times, serif; text-shadow: 2px 2px 4px rgb(101, 99, 99);">Gender:&nbsp;&nbsp;</strong> Female</p>
+            <p><strong style="color: rgb(247, 238, 238); font-family:Georgia, 'Times New Roman', Times, serif; text-shadow: 2px 2px 4px rgb(101, 99, 99);">Bio:&nbsp;&nbsp;</strong> CSE Undergrad</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

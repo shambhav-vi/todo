@@ -1,0 +1,28 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container-fluid.custom-background {
+    min-height: 100vh;  
+    display: flex;
+    flex-direction: column; /* Adjusted to column direction */
+    justify-content: flex-start; /* Align content to the top */
+    background-image: url('/static/images/todo_bg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-fluid.custom-background .container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.container-fluid.custom-background .table thead th {
+    background-color:  rgba(0, 0, 0, 0.7);
+    color: white; /* Optional: Set the text color to white for better visibility */
+}
+
